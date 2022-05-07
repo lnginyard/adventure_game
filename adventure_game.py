@@ -36,7 +36,7 @@ def vacant_house(item, option):
                     "the hammer with you.")
         print_pause("\nYou walk back out to the alley.\n")
         item.append("knife")
-    field(item, option)
+    port_potty(item, option)
 
 
 def dark_path(item, option):
@@ -73,11 +73,11 @@ def dark_path(item, option):
             print_pause("\nYou run back into the alley. "
                         "\nLuckily, you don't seem to have been "
                         "followed.\n")
-            field(item, option)
+            port_potty(item, option)
             break
 
 
-def field(item, option):
+def port_potty(item, option):
     print_pause("Enter 1 to knock on the door of the empty house.")
     print_pause("Enter 2 to peer into the alleyway.")
     print_pause("What would you like to do?")
@@ -104,10 +104,10 @@ def play_again():
 
 def play_game():
     item = []
-    option = random.choice(["🧙‍♀️Wicked-Witch🧙‍♀️", "🥷Ninja🥷", "🐺Vicious-Werewolf"🐺, "🧝Sorceror🧝",
-                            "🧛🏻‍♂️Vampire🧛🏻‍♂️"])
+    option = random.choice
+    (["🧙‍♀️Wicked-Witch🧙‍♀️", "🥷Ninja🥷", "🐺Vicious-Werewolf"🐺, "🧝Sorceror🧝", "🧛🏻‍♂️Vampire🧛🏻‍♂️"])
     intro(item, option)
-    field(item, option)
+    port_potty(item, option)
 
 
 play_game()
