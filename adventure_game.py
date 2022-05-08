@@ -12,27 +12,27 @@ def intro(item, option):
                 "with graffitti,rats and trash.\n")
     print_pause("Rumor has it that a " + option + " is somewhere around "
                 "here, and has been terrifying the streets at night.\n")
-    print_pause("In front of you is an abandoned house.\n")
+    print_pause("In front of you is an abandoned cave.\n")
     print_pause("To your right is a dark pathway to the busy street.\n")
     print_pause("In your pocket you have your good ole handy-dandy pocket"
                 "knife and in your backpack there is your stun-gun, all for"
                 "your protection.\n")
 
 
-def vacant_house(item, option):
+def cave(item, option):
     if "knife" in item:
-        print_pause("\nYou peer cautiously into the house.🏡")
+        print_pause("\nYou peer cautiously into the cave.⛩🕋")
         print_pause("\nYou've been here before, and gotten all"
-                    " the good stuff. It's just an empty house🏚"
+                    " the good stuff. It's just an cave🛖"
                     " now.")
         print_pause("\nYou walk back to the alley.🛤🚶‍♂️\n")
     else:
-        print_pause("\nYou peer cautiously into the ⛩alleyway.🛤")
-        print_pause("\nIt turns out to be only a very narrow ⛩alleyway.🛤")
-        print_pause("\nYour eye catches a glint of 🪙metal🖱 behind a "
+        print_pause("\nYou peer cautiously into the 🏚house🏚.")
+        print_pause("\nIt turns out to be only a very narrow 🏚house🏚.")
+        print_pause("\nYour eye👀 catches a glint of 🪙metal🖱 behind a "
                     "rock.🪦")
         print_pause("\n🔨⚡️You have found the deadly hammer of Ragnorak⛏⚡️!")
-        print_pause("\nYou discard your silly little pocket knife and take "
+        print_pause("\nYou discard 🗑your silly little pocket knife and take "
                     "the hammer with you.")
         print_pause("\nYou walk back out to the alley.\n")
         item.append("knife")
@@ -40,7 +40,7 @@ def vacant_house(item, option):
 
 
 def dark_path(item, option):
-    print_pause("\nYou approach the entrance of the alleyway.")
+    print_pause("\nYou approach the entrance of the cave.")
     print_pause("\nYou are about to run when a door "
                 "opens and out steps a " + option + ".")
     print_pause("\nEep! This is the " + option + "'s turf!")
@@ -73,21 +73,21 @@ def dark_path(item, option):
             print_pause("\nYou 🏃‍♂️🏃‍♂️💨run back into the alley.🛤"
                         "\nLuckily, you don't seem to have been "
                         "followed.😰\n")
-            port_potty(item, option)
+            alley(item, option)
             break
 
 
-def 000(item, option):
-    print_pause("Enter 1️⃣ to knock on the door of the empty house.")
-    print_pause("Enter 2️⃣ to peer into the alleyway.")
+def alley(item, option):
+    print_pause("Enter 1️⃣ to knock on the door of the empty cave.")
+    print_pause("Enter 2️⃣ to peer into the house.")
     print_pause("What would you like to do")
     while True:
         choice1 = input("(🙏🏾Please enter 🔘1️⃣ or 🔘2️⃣.)\n")
         if choice1 == "1":
-            vacant_house(item, option)
+            cave(item, option)
             break
         elif choice1 == "2":
-            dark_path(item, option)
+            house(item, option)
             break
 
 
