@@ -1,6 +1,6 @@
-<h1>Adventure Game!!</h1>
+<h1>🌚🦇Spooky🕸 🏃Adventure🏃🏾‍♀️ 🥇🎰Game!!🕹⛳️🏆</h1>
 
-<h3>Project Instructions</h3>
+<h3>🧾Project Instructions📑❕❗️</h3>
   
 <ol><strong>1. Print descriptions of what's happening for the player</strong></ol>
 
@@ -160,7 +160,7 @@ def house():</blockquote>
     
 <ul>Instead, it would be better if the game asked the player whether they want to play again:</ul>
 
-<h2>GAME OVER!!</h2>
+<h2>🚫The End‼️🔚GAME OVER!!❌</h2>
 <break>
 <bold><h3>Would you like to play again? (y/n)</h3</bold>
 <break>
