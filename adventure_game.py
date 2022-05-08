@@ -21,17 +21,17 @@ def intro(item, option):
 
 def vacant_house(item, option):
     if "knife" in item:
-        print_pause("\nYou peer cautiously into the house.")
+        print_pause("\nYou peer cautiously into the house.🏡")
         print_pause("\nYou've been here before, and gotten all"
-                    " the good stuff. It's just an empty house"
+                    " the good stuff. It's just an empty house🏚"
                     " now.")
-        print_pause("\nYou walk back to the alley.\n")
+        print_pause("\nYou walk back to the alley.🛤🚶‍♂️\n")
     else:
-        print_pause("\nYou peer cautiously into the alleyway.")
-        print_pause("\nIt turns out to be only a very narrow alleyway.")
-        print_pause("\nYour eye catches a glint of metal behind a "
-                    "rock.")
-        print_pause("\nYou have found the deadly hammer of Ragnorak!")
+        print_pause("\nYou peer cautiously into the ⛩alleyway.🛤")
+        print_pause("\nIt turns out to be only a very narrow ⛩alleyway.🛤")
+        print_pause("\nYour eye catches a glint of 🪙metal🖱 behind a "
+                    "rock.🪦")
+        print_pause("\n🔨⚡️You have found the deadly hammer of Ragnorak⛏⚡️!")
         print_pause("\nYou discard your silly little pocket knife and take "
                     "the hammer with you.")
         print_pause("\nYou walk back out to the alley.\n")
@@ -61,28 +61,28 @@ def dark_path(item, option):
                 print_pause("\nBut the " + option + "takes one look at "
                             "your deadly new toy and runs away!")
                 print_pause("\nYou have rid the town of the " + option +
-                            ". You are victorious!\n")
+                            ". You are victorious!🏆\n")
             else:
-                print_pause("\nYou do your best...")
-                print_pause("but your knife is no match for the "
+                print_pause("\nYou do your best...🤺")
+                print_pause("but your knife🔪 is no match for the "
                             + option + ".")
-                print_pause("\nYou have been defeated!\n")
+                print_pause("\nYou have been defeated!😵💀🚨\n")
             play_again()
             break
         if choice2 == "2":
-            print_pause("\nYou run back into the alley. "
+            print_pause("\nYou 🏃‍♂️🏃‍♂️💨run back into the alley.🛤"
                         "\nLuckily, you don't seem to have been "
-                        "followed.\n")
+                        "followed.😰\n")
             port_potty(item, option)
             break
 
 
-def port_potty(item, option):
-    print_pause("Enter 1 to knock on the door of the empty house.")
-    print_pause("Enter 2 to peer into the alleyway.")
-    print_pause("What would you like to do?")
+def 000(item, option):
+    print_pause("Enter 1️⃣ to knock on the door of the empty house.")
+    print_pause("Enter 2️⃣ to peer into the alleyway.")
+    print_pause("What would you like to do")
     while True:
-        choice1 = input("(Please enter 🔘1️⃣ or 🔘2️⃣.)\n")
+        choice1 = input("(🙏🏾Please enter 🔘1️⃣ or 🔘2️⃣.)\n")
         if choice1 == "1":
             vacant_house(item, option)
             break
@@ -92,12 +92,12 @@ def port_potty(item, option):
 
 
 def play_again():
-    again = input("Would you like to play again? (y/n)").lower()
+    again = input("Would you like to play again❔❓💁‍♀️ 💁‍♂️(y/n)").lower()
     if again == "y":
-        print_pause("\n\n\nExcellent! Restarting the game ...\n\n\n")
+        print_pause("\n\n\n👍Excellent❗️❕ 🔄Restarting the game🔂...\n\n\n")
         play_game()
     elif again == "n":
-        print_pause("\n\n\nThanks for playing! See you next time.\n\n\n")
+        print_pause("\n\n\n🫡Thanks for playing! See you next time.👋✌️🤝🫱🏾‍🫲🏻🫱🏾‍🫲🏼\n\n\n")
     else:
         play_again()
 
@@ -105,9 +105,8 @@ def play_again():
 def play_game():
     item = []
     option = random.choice
-    (["🧙‍♀️Wicked-Witch🧙‍♀️", "🥷Ninja🥷", "🐺Vicious-Werewolf"🐺, "🧝Sorceror🧝", "🧛🏻‍♂️Vampire🧛🏻‍♂️"])
+    (["🧙‍♀️Wicked-Witch🧙‍♀️", "🥷Ninja🥷", "🐺Vicious-Werewolf"🐺, "🧝Sorceror🧝", "🧛🏻‍♂️Vampire🧛🏻‍♂️", "👻Ghost👻", "👹Demon'])
     intro(item, option)
     port_potty(item, option)
-
 
 play_game()
