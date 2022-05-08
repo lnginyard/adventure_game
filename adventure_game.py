@@ -39,7 +39,7 @@ def cave(item, option):
     port_potty(item, option)
 
 
-def dark_path(item, option):
+def empty-house(item, option):
     print_pause("\nYou approach the entrance of the cave.")
     print_pause("\nYou are about to run when a door "
                 "opens and out steps a " + option + ".")
