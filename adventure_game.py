@@ -8,7 +8,7 @@ def print_pause(msg_to_print):
 
 
 def intro(item, option):
-    print_pause("You find yourself standing in an dark alley, filled "
+    print_pause("You find yourself standing🚶‍♂️ in an dark alley🛤🌑, filled "
                 "with graffitti,rats and trash.\n")
     print_pause("Rumor has it that a " + option + " is somewhere around "
                 "here, and has been terrifying the streets at night.\n")
