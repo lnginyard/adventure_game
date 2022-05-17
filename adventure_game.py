@@ -36,7 +36,7 @@ def cave(item, option):
                     "the hammer with you.")
         print_pause("\nYou walk back out to the alley.\n")
         item.append("knife")
-    port_potty(item, option)
+    alley(item, option)
 
 
 def empty_house(item, option):
@@ -72,19 +72,8 @@ def empty_house(item, option):
         if choice2 == "2":
             print_pause("\nYou 🏃‍♂️🏃‍♂️💨run back into the alley.🛤"
                         "\nLuckily, you don't seem to have been "
-<<<<<<< HEAD
                         "followed.\n")
-            port_potty(item, option)
-            break
-
-
-def port_potty(item, option):
-    print_pause("Enter 1 to knock on the door of the empty house.")
-    print_pause("Enter 2 to peer into the alleyway.")
-    print_pause("What would you like to do?")
-=======
-                        "followed.😰\n")
-            alley(item, option)
+           alley(item, option)
             break
 
 
@@ -92,7 +81,6 @@ def alley(item, option):
     print_pause("Enter 1️⃣ to knock on the door of the empty cave.")
     print_pause("Enter 2️⃣ to peer into the house.")
     print_pause("What would you like to do")
->>>>>>> 62cd7b70af05d5e9ec1c5318887ad00afcac9a33
     while True:
         choice1 = input("(🙏🏾Please enter 🔘1️⃣ or 🔘2️⃣.)\n")
         if choice1 == "1":
@@ -117,12 +105,7 @@ def play_again():
 def play_game():
     item = []
     option = random.choice
-<<<<<<< HEAD
     (["🧙‍♀️Wicked-Witch🧙‍♀️", "🥷Ninja🥷", "🐺Vicious-Werewolf"🐺, "🧝Sorceror🧝", "🧛🏻‍♂️Vampire🧛🏻‍♂️"])
-=======
-    (["🧙‍♀️Wicked-Witch🧙‍♀️", "🥷Ninja🥷", "🐺Vicious-Werewolf"🐺, "🧝Sorceror🧝", "🧛🏻‍♂️Vampire🧛🏻‍♂️", "👻Ghost👻", "👹Demon'])
->>>>>>> 62cd7b70af05d5e9ec1c5318887ad00afcac9a33
-    intro(item, option)
-    port_potty(item, option)
+    alley(item, option)
 
 play_game()
