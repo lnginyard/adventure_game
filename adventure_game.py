@@ -70,7 +70,7 @@ def empty_house(item, option):
             play_again()
             break
         if choice2 == "2":
-            print_pause("\nYou 🏃‍♂️🏃‍♂️💨run back into the alley.🛤"
+            print_pause("\nYou run back into the alley.🛤"
                         "\nLuckily, you don't seem to have been "
                         "followed.\n")
            alley(item, option)
